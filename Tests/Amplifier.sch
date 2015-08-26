@@ -13187,105 +13187,6 @@ high speed</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="con-jst">
-<description>&lt;b&gt;J.S.T. Connectors&lt;/b&gt;&lt;p&gt;
-J.S.T Mfg Co.,Ltd.&lt;p&gt;
-http://www.jst-mfg.com&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="B4B-ZR">
-<description>&lt;b&gt;ZH CONNECTOR&lt;/b&gt;  Top entry type, 1.5 mm, 4 pin 1 row&lt;p&gt;
-Source: http://www.jst.com .. eZH.pdf</description>
-<wire x1="3.65" y1="-2.1" x2="-3.65" y2="-2.1" width="0.2032" layer="21"/>
-<wire x1="-3.65" y1="-2.1" x2="-3.65" y2="1.2" width="0.2032" layer="21"/>
-<wire x1="3.65" y1="1.2" x2="3.65" y2="-2.1" width="0.2032" layer="21"/>
-<wire x1="3.65" y1="1.2" x2="-3.65" y2="1.2" width="0.2032" layer="21"/>
-<wire x1="-3.25" y1="1" x2="-3.25" y2="1.15" width="0.2032" layer="21"/>
-<wire x1="-3.25" y1="1" x2="-2.75" y2="1" width="0.2032" layer="21"/>
-<wire x1="-2.75" y1="1" x2="-2.75" y2="1.15" width="0.2032" layer="21"/>
-<pad name="1" x="-2.25" y="0" drill="0.7" diameter="1.1"/>
-<pad name="2" x="-0.75" y="0" drill="0.7" diameter="1.1"/>
-<pad name="3" x="0.75" y="0" drill="0.7" diameter="1.1"/>
-<pad name="4" x="2.25" y="0" drill="0.7" diameter="1.1"/>
-<text x="-3.75" y="1.5" size="1.27" layer="25">&gt;NAME</text>
-<text x="-3.75" y="-3.5" size="1.27" layer="27">&gt;VALUE</text>
-</package>
-<package name="S4B-ZR">
-<description>&lt;b&gt;ZH CONNECTOR&lt;/b&gt; Side entry type, 1.5 mm, 4 pin 1 row&lt;p&gt;
-Source: http://www.jst.com .. eZH.pdf</description>
-<wire x1="3.65" y1="-4.5" x2="-3.65" y2="-4.5" width="0.2032" layer="21"/>
-<wire x1="-3.65" y1="-4.5" x2="-3.65" y2="1.275" width="0.2032" layer="21"/>
-<wire x1="3.65" y1="1.275" x2="3.65" y2="-4.5" width="0.2032" layer="21"/>
-<wire x1="3.65" y1="1.275" x2="-3.65" y2="1.275" width="0.2032" layer="21"/>
-<wire x1="-3.55" y1="0.325" x2="3.55" y2="0.325" width="0.2032" layer="51"/>
-<pad name="1" x="-2.25" y="0" drill="0.7" diameter="1.1"/>
-<pad name="2" x="-0.75" y="0" drill="0.7" diameter="1.1"/>
-<pad name="3" x="0.75" y="0" drill="0.7" diameter="1.1"/>
-<pad name="4" x="2.25" y="0" drill="0.7" diameter="1.1"/>
-<text x="-3.75" y="1.5" size="1.27" layer="25">&gt;NAME</text>
-<text x="-3.81" y="-6.35" size="1.27" layer="27">&gt;VALUE</text>
-</package>
-</packages>
-<symbols>
-<symbol name="PM-VN">
-<wire x1="0.254" y1="0" x2="-1.524" y2="0" width="0.4064" layer="94"/>
-<text x="1.016" y="-0.762" size="1.524" layer="95">&gt;NAME</text>
-<text x="-4.064" y="1.524" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="1" x="-5.08" y="0" visible="off" length="middle" direction="pas"/>
-</symbol>
-<symbol name="PM-N">
-<wire x1="0.254" y1="0" x2="-1.524" y2="0" width="0.4064" layer="94"/>
-<text x="1.016" y="-0.762" size="1.524" layer="95">&gt;NAME</text>
-<pin name="1" x="-5.08" y="0" visible="off" length="middle" direction="pas"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="?4B-ZR" prefix="X">
-<description>&lt;b&gt;ZH CONNECTOR&lt;/b&gt; 1.5 mm, 4 pin 1 row&lt;p&gt;
-Source: http://www.jst.com .. eZH.pdf</description>
-<gates>
-<gate name="-1" symbol="PM-VN" x="0" y="0" addlevel="always"/>
-<gate name="-2" symbol="PM-N" x="0" y="-2.54" addlevel="always"/>
-<gate name="-3" symbol="PM-N" x="0" y="-5.08" addlevel="always"/>
-<gate name="-4" symbol="PM-N" x="0" y="-7.62" addlevel="always"/>
-</gates>
-<devices>
-<device name="B" package="B4B-ZR">
-<connects>
-<connect gate="-1" pin="1" pad="1"/>
-<connect gate="-2" pin="1" pad="2"/>
-<connect gate="-3" pin="1" pad="3"/>
-<connect gate="-4" pin="1" pad="4"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MF" value="FARNELL" constant="no"/>
-<attribute name="MPN" value="B4B-ZR(LF)(SN)" constant="no"/>
-<attribute name="OC_FARNELL" value="1830916" constant="no"/>
-<attribute name="OC_NEWARK" value="37K9960" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="S" package="S4B-ZR">
-<connects>
-<connect gate="-1" pin="1" pad="1"/>
-<connect gate="-2" pin="1" pad="2"/>
-<connect gate="-3" pin="1" pad="3"/>
-<connect gate="-4" pin="1" pad="4"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MF" value="FARNELL" constant="no"/>
-<attribute name="MPN" value="S4B-ZR(LF)(SN)" constant="no"/>
-<attribute name="OC_FARNELL" value="9491830" constant="no"/>
-<attribute name="OC_NEWARK" value="38K8076" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="led">
 <description>&lt;b&gt;LEDs&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;&lt;br&gt;
@@ -14791,6 +14692,60 @@ Source: www.kingbright.com</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="solpad">
+<description>&lt;b&gt;Solder Pads/Test Points&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="LSP10">
+<description>&lt;b&gt;SOLDER PAD&lt;/b&gt;&lt;p&gt;
+drill 1.0 mm</description>
+<wire x1="-1.27" y1="0.254" x2="-1.27" y2="-0.254" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="0.254" x2="1.27" y2="-0.254" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="0.254" x2="1.143" y2="0.254" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="-0.254" x2="1.143" y2="-0.254" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="-0.254" x2="-1.143" y2="-0.254" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="0.254" x2="-1.143" y2="0.254" width="0.1524" layer="21"/>
+<wire x1="1.143" y1="0.254" x2="0.635" y2="0.254" width="0.1524" layer="51"/>
+<wire x1="-1.143" y1="-0.254" x2="-0.635" y2="-0.254" width="0.1524" layer="51"/>
+<wire x1="0.635" y1="0.254" x2="0.635" y2="-0.254" width="0.1524" layer="51"/>
+<wire x1="0.635" y1="0.254" x2="-0.635" y2="0.254" width="0.1524" layer="51"/>
+<wire x1="0.635" y1="-0.254" x2="1.143" y2="-0.254" width="0.1524" layer="51"/>
+<wire x1="-0.635" y1="0.254" x2="-0.635" y2="-0.254" width="0.1524" layer="51"/>
+<wire x1="-0.635" y1="0.254" x2="-1.143" y2="0.254" width="0.1524" layer="51"/>
+<wire x1="-0.635" y1="-0.254" x2="0.635" y2="-0.254" width="0.1524" layer="51"/>
+<pad name="MP" x="0" y="0" drill="1.016" diameter="2.159" shape="octagon"/>
+<text x="-1.27" y="1.27" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="0" y="0.254" size="0.0254" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="LSP">
+<wire x1="-1.016" y1="2.032" x2="1.016" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="0" x2="1.016" y2="2.032" width="0.254" layer="94"/>
+<circle x="0" y="1.016" radius="1.016" width="0.4064" layer="94"/>
+<text x="-1.27" y="2.921" size="1.778" layer="95">&gt;NAME</text>
+<pin name="MP" x="0" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="LSP10" prefix="LSP">
+<description>&lt;b&gt;SOLDER PAD&lt;/b&gt;&lt;p&gt; drill 1.0 mm, distributor Buerklin, 12H555</description>
+<gates>
+<gate name="1" symbol="LSP" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="LSP10">
+<connects>
+<connect gate="1" pin="MP" pad="MP"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -14826,12 +14781,15 @@ Source: www.kingbright.com</description>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="ADC" library="Arduino Dev Parts" deviceset="MCP3021" device="A5T-E/OT"/>
-<part name="OUTPUT" library="con-jst" deviceset="?4B-ZR" device="S" value="S4B-ZR"/>
 <part name="C6" library="rcl" deviceset="CPOL-EU" device="SMCB" value="100nF"/>
 <part name="R5" library="rcl" deviceset="R-EU_" device="R1206" value="220R"/>
 <part name="LED1" library="led" deviceset="LED" device="5MM"/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="U$1" library="Arduino Dev Parts" deviceset="VBT101BH" device=""/>
+<part name="VCC" library="solpad" deviceset="LSP10" device=""/>
+<part name="SDA" library="solpad" deviceset="LSP10" device=""/>
+<part name="SCL" library="solpad" deviceset="LSP10" device=""/>
+<part name="GND" library="solpad" deviceset="LSP10" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -14846,7 +14804,7 @@ Source: www.kingbright.com</description>
 <instance part="GND2" gate="1" x="5.08" y="30.48"/>
 <instance part="SW" gate="ADG755" x="60.96" y="50.8" rot="R180"/>
 <instance part="C1" gate="G$1" x="-2.54" y="58.42" rot="R90"/>
-<instance part="R1" gate="G$1" x="5.08" y="50.8" rot="R90"/>
+<instance part="R1" gate="G$1" x="5.08" y="48.26" rot="R270"/>
 <instance part="R2" gate="G$1" x="-30.48" y="73.66" rot="R180"/>
 <instance part="C2" gate="G$1" x="-30.48" y="81.28" rot="R90"/>
 <instance part="VSS1" gate="G$1" x="127" y="30.48" rot="R90"/>
@@ -14860,20 +14818,28 @@ Source: www.kingbright.com</description>
 <instance part="R3" gate="G$1" x="0" y="129.54" rot="R90"/>
 <instance part="D1" gate="G$1" x="-10.16" y="111.76" rot="R270"/>
 <instance part="R4" gate="G$1" x="-2.54" y="111.76" rot="R90"/>
-<instance part="C5" gate="G$1" x="-2.54" y="99.06" rot="R180"/>
+<instance part="C5" gate="G$1" x="-2.54" y="99.06"/>
 <instance part="VSS5" gate="G$1" x="99.06" y="124.46" rot="R180"/>
 <instance part="GND5" gate="1" x="83.82" y="27.94"/>
 <instance part="GND6" gate="1" x="99.06" y="83.82"/>
 <instance part="ADC" gate="MCP3021" x="111.76" y="106.68"/>
-<instance part="OUTPUT" gate="-1" x="144.78" y="114.3"/>
-<instance part="OUTPUT" gate="-2" x="144.78" y="111.76"/>
-<instance part="OUTPUT" gate="-3" x="144.78" y="109.22"/>
-<instance part="OUTPUT" gate="-4" x="144.78" y="106.68"/>
 <instance part="C6" gate="G$1" x="73.66" y="109.22"/>
 <instance part="R5" gate="G$1" x="-33.02" y="124.46" rot="R270"/>
 <instance part="LED1" gate="G$1" x="-33.02" y="116.84"/>
 <instance part="GND4" gate="1" x="-33.02" y="109.22"/>
 <instance part="U$1" gate="A" x="-45.72" y="58.42" rot="R180"/>
+<instance part="VCC" gate="1" x="142.24" y="114.3" smashed="yes" rot="R270">
+<attribute name="NAME" x="145.034" y="113.411" size="1.778" layer="95"/>
+</instance>
+<instance part="SDA" gate="1" x="142.24" y="111.76" smashed="yes" rot="R270">
+<attribute name="NAME" x="145.034" y="110.871" size="1.778" layer="95"/>
+</instance>
+<instance part="SCL" gate="1" x="142.24" y="109.22" smashed="yes" rot="R270">
+<attribute name="NAME" x="145.288" y="108.331" size="1.778" layer="95"/>
+</instance>
+<instance part="GND" gate="1" x="142.24" y="106.68" smashed="yes" rot="R270">
+<attribute name="NAME" x="145.034" y="105.791" size="1.778" layer="95"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -14930,7 +14896,7 @@ Source: www.kingbright.com</description>
 <wire x1="25.4" y1="88.9" x2="17.78" y2="88.9" width="0.1524" layer="91"/>
 <junction x="17.78" y="88.9"/>
 <pinref part="C5" gate="G$1" pin="2"/>
-<wire x1="-2.54" y1="104.14" x2="5.08" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="-2.54" y1="93.98" x2="5.08" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="5.08" y1="88.9" x2="17.78" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="C4" gate="G$1" pin="1"/>
 <wire x1="25.4" y1="88.9" x2="27.94" y2="91.44" width="0.1524" layer="91"/>
@@ -14939,7 +14905,6 @@ Source: www.kingbright.com</description>
 <pinref part="ADC" gate="MCP3021" pin="GND"/>
 <pinref part="GND6" gate="1" pin="GND"/>
 <wire x1="99.06" y1="86.36" x2="99.06" y2="91.44" width="0.1524" layer="91"/>
-<pinref part="OUTPUT" gate="-4" pin="1"/>
 <wire x1="99.06" y1="91.44" x2="99.06" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="91.44" x2="124.46" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="91.44" x2="139.7" y2="106.68" width="0.1524" layer="91"/>
@@ -14947,6 +14912,7 @@ Source: www.kingbright.com</description>
 <pinref part="C6" gate="G$1" pin="-"/>
 <wire x1="73.66" y1="104.14" x2="86.36" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="91.44" x2="99.06" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="GND" gate="1" pin="MP"/>
 </segment>
 <segment>
 <pinref part="LED1" gate="G$1" pin="C"/>
@@ -14975,7 +14941,7 @@ Source: www.kingbright.com</description>
 <wire x1="2.54" y1="58.42" x2="5.08" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="5.08" y1="58.42" x2="10.16" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="5.08" y1="58.42" x2="5.08" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="5.08" y1="58.42" x2="5.08" y2="53.34" width="0.1524" layer="91"/>
 <junction x="5.08" y="58.42"/>
 </segment>
 </net>
@@ -15038,7 +15004,7 @@ Source: www.kingbright.com</description>
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
 <pinref part="C3" gate="G$1" pin="2"/>
-<wire x1="5.08" y1="40.64" x2="5.08" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="5.08" y1="40.64" x2="5.08" y2="43.18" width="0.1524" layer="91"/>
 <label x="5.08" y="43.18" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
@@ -15083,7 +15049,6 @@ Source: www.kingbright.com</description>
 <pinref part="ADC" gate="MCP3021" pin="VCC"/>
 <pinref part="VSS5" gate="G$1" pin="VSS"/>
 <wire x1="99.06" y1="121.92" x2="99.06" y2="119.38" width="0.1524" layer="91"/>
-<pinref part="OUTPUT" gate="-1" pin="1"/>
 <wire x1="99.06" y1="119.38" x2="99.06" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="119.38" x2="134.62" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="134.62" y1="119.38" x2="139.7" y2="114.3" width="0.1524" layer="91"/>
@@ -15091,6 +15056,7 @@ Source: www.kingbright.com</description>
 <pinref part="C6" gate="G$1" pin="+"/>
 <wire x1="73.66" y1="111.76" x2="81.28" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="119.38" x2="99.06" y2="119.38" width="0.1524" layer="91"/>
+<pinref part="VCC" gate="1" pin="MP"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -15103,7 +15069,7 @@ Source: www.kingbright.com</description>
 <wire x1="2.54" y1="106.68" x2="-2.54" y2="106.68" width="0.1524" layer="91"/>
 <junction x="7.62" y="111.76"/>
 <pinref part="C5" gate="G$1" pin="1"/>
-<wire x1="-2.54" y1="96.52" x2="-2.54" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="-2.54" y1="101.6" x2="-2.54" y2="106.68" width="0.1524" layer="91"/>
 <junction x="-2.54" y="106.68"/>
 <pinref part="D1" gate="G$1" pin="C"/>
 <wire x1="-10.16" y1="109.22" x2="-7.62" y2="106.68" width="0.1524" layer="91"/>
@@ -15144,16 +15110,16 @@ Source: www.kingbright.com</description>
 <net name="N$4" class="0">
 <segment>
 <pinref part="ADC" gate="MCP3021" pin="SCL"/>
-<pinref part="OUTPUT" gate="-3" pin="1"/>
 <wire x1="124.46" y1="106.68" x2="137.16" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="137.16" y1="106.68" x2="139.7" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="SCL" gate="1" pin="MP"/>
 </segment>
 </net>
 <net name="N$11" class="0">
 <segment>
 <pinref part="ADC" gate="MCP3021" pin="SDA"/>
-<pinref part="OUTPUT" gate="-2" pin="1"/>
 <wire x1="124.46" y1="111.76" x2="139.7" y2="111.76" width="0.1524" layer="91"/>
+<pinref part="SDA" gate="1" pin="MP"/>
 </segment>
 </net>
 <net name="N$8" class="0">
