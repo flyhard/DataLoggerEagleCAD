@@ -1,0 +1,40 @@
+Partlist
+
+Exported from Schematic.sch at 11.09.2017 10:31
+
+EAGLE Version 8.3.2 Copyright (c) 1988-2017 Autodesk, Inc.
+
+Assembly variant:
+
+Part              Value          Device         Package          Library                    Sheet
+
+1WIRE1:JP1                       PINHD-1X3/90   1X03/90          pinhead                    ONE_WIRE:1
+1WIRE1:R2         4,7k           R-EU_R1206     R1206            resistor                   ONE_WIRE:1
+C1                100nF          C-EUC1206      C1206            rcl                        1
+C4                100nF          C-EUC1206      C1206            rcl                        1
+D1                               DIODE-DO214AA  DO214AA          diode                      1
+D2                               DIODE-DO214AA  DO214AA          diode                      1
+I1                10nH           MLF1608E       L3225M           Element14Parts             1
+J1                DCJ0202        DCJ0202        DCJ0202          con-jack                   1
+JP1               FTDI friend    PINHD-1X6/90   1X06/90          pinhead                    1
+POWER_SUPPLY1:C1  0.33nF         CPOL-EUSMCB    SMC_B            rcl                        POWER_SUPPLY:1
+POWER_SUPPLY1:C2  100nF          CPOL-EUSMCB    SMC_B            rcl                        POWER_SUPPLY:1
+POWER_SUPPLY1:C3  100nF          CPOL-EUSMCB    SMC_B            rcl                        POWER_SUPPLY:1
+POWER_SUPPLY1:IC2 MCP1700 3302E  MCP1700INLINE  TO92-INLINE      adafruit                   POWER_SUPPLY:1
+Q1                IRLML5203      IRLML5203      MICRO3           transistor-power           1
+R1                1M             R-EU_R1206     R1206            rcl                        1
+R2                10k            R-EU_R1206     R1206            rcl                        1
+R3                10k            R-EU_R1206     R1206            rcl                        1
+RESET                            10-XX          B3F-10XX         switch-omron               1
+RTC1:BACKUP_BAT   CR03N          CR03N          CR03N            battery                    RTC:1
+RTC1:C1           0.1F           CPOL-EUSMCB    SMC_B            rcl                        RTC:1
+RTC1:C2           0.1F           CPOL-EUSMCB    SMC_B            rcl                        RTC:1
+RTC1:IC1          DS3231SN       DS3231SOIC-16W SOIC-16W         DS3231_industrialberry     RTC:1
+RTC1:R1           10k            R-EU_R1206     R1206            rcl                        RTC:1
+RTC1:R2           10k            R-EU_R1206     R1206            rcl                        RTC:1
+RTC1:R3           10k            R-EU_R1206     R1206            rcl                        RTC:1
+SD1:R2            10k            R-EU_R1206     R1206            rcl                        SDCARD:1
+SD1:U$1           SDMMC18650     SDMMC18650     SDCARD           adafruit                   SDCARD:1
+U1                ATMEGA328P-AU  ATMEGA328P-AU  TQFP32-08        Arduino Dev Parts          1
+VIZ1:U1           52207-0885     52207-0885     MOLEX_52207-0885 Molex_By_element14_Batch_1 VISIBILITY_SENSOR:1
+WAKE_UP                          10-XX          B3F-10XX         switch-omron               1
